@@ -1,4 +1,4 @@
-# Cinema-App
+# Cinema-App - IN PROGRESS
 Solo project that simulates Cinema
 
 ## About project
