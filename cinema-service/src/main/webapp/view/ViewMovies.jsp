@@ -17,7 +17,7 @@
 
 		<c:forEach var="movie" items="${allMovies}">
 			<div class="movie">
-				<form action="/Cinema/cinema/getProjections" method="get">
+				<form action="/Cinema/guest/getProjections" method="get">
 					<img alt="movie-poster" src="${movie.poster}">
 					<h2>${movie.title}</h2>
 					<p>Length: ${movie.length} min</p>

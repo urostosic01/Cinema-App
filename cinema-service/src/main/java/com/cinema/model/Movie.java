@@ -28,6 +28,8 @@ public class Movie implements Serializable {
 
 	private String title;
 
+	private int year;
+
 	//bi-directional many-to-one association to Genre
 	@ManyToOne
 	private Genre genre;
@@ -85,6 +87,14 @@ public class Movie implements Serializable {
 
 	public void setTitle(String title) {
 		this.title = title;
+	}
+
+	public int getYear() {
+		return this.year;
+	}
+
+	public void setYear(int year) {
+		this.year = year;
 	}
 
 	public Genre getGenre() {

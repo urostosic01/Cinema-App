@@ -61,7 +61,7 @@ h1 {
 	<h1>Projections</h1>
 	<c:forEach var="projection" items="${allProjections}">
 		<div class="projection-list">
-			<form action="">
+			<form action="/Cinema/cinema/reserve">
 				<div class="projection">
 					<h2>Date and time: ${projection.dateTime}</h2>
 					<h3>${projection.movie.title}</h3>

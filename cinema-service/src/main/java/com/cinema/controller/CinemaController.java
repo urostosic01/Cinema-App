@@ -21,19 +21,9 @@ public class CinemaController {
 
 	@Autowired
 	CinemaService cinemaService;
-	
-	@GetMapping("/getMovies")
-	public String showAllMovies(HttpServletRequest request, Model m) {
-		List<Movie> allMovies = cinemaService.findAllMovies();
-		m.addAttribute("allMovies", allMovies);
-		return "view/ViewMovies";
+
+	@GetMapping("/reserve")
+	public String getNewReservation() {
+		return "view/ViewReservations";
 	}
-	
-	@GetMapping("/getProjections")
-	public String showAllProjection(HttpServletRequest request, Model m, Integer idMovie) {
-		List<Projection> allProjections = cinemaService.findAllProjection(idMovie);
-		m.addAttribute("allProjections", allProjections);
-		return "view/ViewProjections";
-	}
-	
 }

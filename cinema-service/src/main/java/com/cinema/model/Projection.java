@@ -19,7 +19,7 @@ public class Projection implements Serializable {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int idProjection;
 
-	@Temporal(TemporalType.DATE)
+	@Temporal(TemporalType.TIMESTAMP)
 	private Date dateTime;
 
 	private double price;
